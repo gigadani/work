@@ -3,7 +3,9 @@
 
 name: Publish windows and linux executables
 
-on: release
+on:
+  release:
+    types: [published]
 
 jobs:
   build:
