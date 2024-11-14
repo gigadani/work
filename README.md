@@ -1,7 +1,7 @@
 # work
 ### The simplest and the most efficient.
 
-If you are a developer who works on one ticket at a time and you want to track your work hours, and for some reason want to plurge it twice or even once a month into the time tracking system of your company, then you will love `work`.
+If you are a developer who works on one ticket at a time and you want to track your work hours, and for some reason want to plurge it only twice or even once a month into the time tracking system of your company, then you will love `work`.
 
 `work` is a simple command line application for you to track your work hours you spend on tickets. It is designed to be simple and efficient. It is written in C# and uses a json file to store the data. You can get monthly or daily reports of these workings which come in the simple and concise format of:
 
