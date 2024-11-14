@@ -41,7 +41,7 @@ work status
 
 ### From source
 
-Note: You need to have .NET 8.0 SDK installed on your machine.
+Note: To build from source, you must have .NET 9.0 SDK installed on your machine.
 
 1. Clone the repository
 
@@ -56,3 +56,7 @@ cd work
 
 dotnet publish
 ```
+
+3. Add the path to the `work` executable to your PATH environment variable.
+
+```bash
