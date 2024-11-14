@@ -31,11 +31,11 @@ jobs:
     - name: Zip linux file
       uses: montudor/action-zip@v1
       with:
-        args: zip work-linux-${{ github.event.release.tag_name }}.zip bin/Release/net9.0/linux-x64/publish/work
+        args: zip -j work-linux-${{ github.event.release.tag_name }}.zip bin/Release/net9.0/linux-x64/publish/work
     - name: Zip win file
       uses: montudor/action-zip@v1
       with:
-        args: zip work-win-${{ github.event.release.tag_name }}.zip bin/Release/net9.0/win-x64/publish/work.exe
+        args: zip -j work-win-${{ github.event.release.tag_name }}.zip bin/Release/net9.0/win-x64/publish/work.exe
     - name: Upload linux release to new github release
       uses: JasonEtco/upload-to-release@master
       with:
