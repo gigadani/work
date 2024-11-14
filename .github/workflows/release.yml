@@ -39,13 +39,13 @@ jobs:
     - name: Upload linux release to new github release
       uses: JasonEtco/upload-to-release@master
       with:
-        args: work-linux-${{ github.event.release.tag_name }}.zip
+        args: work-linux-${{ github.event.release.tag_name }}.zip application/zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload windows release to new github release
       uses: JasonEtco/upload-to-release@master
       with:
-        args: work-win-${{ github.event.release.tag_name }}.zip
+        args: work-win-${{ github.event.release.tag_name }}.zip application/zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
