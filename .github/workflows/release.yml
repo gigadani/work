@@ -29,13 +29,13 @@ jobs:
     - name: Upload linux release to new github release
       uses: JasonEtco/upload-to-release@master
       with:
-        args: bin/Release/net9.0/linux-x64/publish/work
+        args: /home/runner/work/work/work/bin/Release/net9.0/win-x64/publish/work.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload windows release to new github release
       uses: JasonEtco/upload-to-release@master
       with:
-        args: bin/Release/net9.0/windows-x64/publish/work
+        args: /home/runner/work/work/work/bin/Release/net9.0/win-x64/publish/work.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
