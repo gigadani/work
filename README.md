@@ -39,6 +39,20 @@ work status
 
 ## Installation
 
+### From a release
+
+1. Grab the latest release from [here](https://github.com/gigadani/work/releases).
+
+2. Extract the archive to a directory of your choice.
+
+If you're on Linux, you might need to give the executable permission to run:
+
+```bash
+chmod +x work
+```
+
+3. Add the path to the `work` executable to your PATH environment variable, so you can use the command everywhere.
+
 ### From source
 
 Note: To build from source, you must have .NET 9.0 SDK installed on your machine.
@@ -51,12 +65,40 @@ git clone https://github.com/gigadani/work.git
 
 2. Build the project
 
+- On Windows:
+
 ```bash
 cd work
-
 dotnet publish
 ```
 
-3. Add the path to the `work` executable to your PATH environment variable.
+- On Linux:
 
 ```bash
+cd work
+dotnet publish --os linux
+```
+
+3. Navigate to the subdirectory where the executable is now located.
+
+- On Windows:
+
+```bash
+cd bin\Release\net9.0\win-x64\publish\
+```
+
+- On Linux:
+
+```bash
+cd bin/Release/net9.0/linux-x64/publish/
+```
+
+If you want, you can at this point copy the executable (`work` on linux, `work.exe` on Windows) to a directory of your choice.
+
+And if you're on Linux, you might need to give the executable permission to run:
+
+```bash
+chmod +x work
+```
+
+4. Add the path to the `work` executable to your PATH environment variable, so you can use the command everywhere.
